@@ -5,12 +5,16 @@
   --black: #231F20;
   --orange: #EF4D25;
   --fade-white: #F3F1F1;
-  --ditry-grey: #ACACA8;
+  --dirty-grey: #ACACA8;
   --white: #fff;
 
   /* Font variables */
   --main-font: 'Oxanium', 'Segoe UI', Arial, sans-serif;
   --header-font: 'Oxanium', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+
+  /* line spacing */
+  --line-spacing-top: 40px;
+  --line-spacing-bottom: 75px;
 }
 
 .container {
@@ -23,11 +27,4 @@
 header {
   background-color: var(--header-bg);
   font-family: var(--header-font);
-}
-
-/* Dummy variables for easy adjustment */
-:root {
-  --dummy-spacing: 2rem;
-  --dummy-radius: 12px;
-  --dummy-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }

@@ -1,4 +1,87 @@
-/* carousel.css: Custom styles for the homepage carousel */
+/* Carousel 1 Styling */
+
+.carousel-1 .carousel-left {
+  flex: 1 1 60%;
+  position: relative;
+}
+
+.carousel-1 .carousel-astronaut {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-1 .carousel-right {
+  flex: 1 1 50%;
+  position: absolute;
+  right: 200px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 56px 48px 32px;
+  z-index: 2;
+  max-width: 540px;
+  min-width: 340px;
+  border-radius: 0 24px 24px 0;
+}
+
+.carousel-1 .carousel-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.carousel-1 .carousel-trophy img {
+  width: 45px;
+  height: auto
+}
+
+.carousel-1 .carousel-tagline {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.carousel-1 .carousel-divider {
+  width: 130px;
+  border: 1.5px solid var(--black);
+  margin-top: var(--line-spacing-top);
+  margin-bottom: var(--line-spacing-bottom);
+}
+
+.carousel-1 .carousel-heading {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 18px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.carousel-1 .carousel-subheading {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 28px;
+}
+
+.carousel-1 .btn-primary-custom {
+  background: var(--orange);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(239,77,37,0.08);
+  transition: background 0.2s;
+}
+.carousel-1 .btn-primary-custom:hover {
+  background: #d13e1c;
+}
 
 #mainCarousel {
   border-radius: var(--dummy-radius, 12px);
@@ -10,3 +93,220 @@
   border-radius: var(--dummy-radius, 12px);
   padding: 1.5rem;
 }
+
+.carousel-astronaut {
+  max-width: 67%;
+  height: auto;
+}
+
+/* Carousel Slide 2 Styling */
+/* Carousel 2 Styles */
+.carousel-2 {
+  position: relative;
+}
+.carousel-2 .carousel-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 95vh;
+  min-height: 95vh;
+  overflow: hidden;
+}
+.carousel-2-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+.carousel-2-left {
+  flex: 1 1 60%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  z-index: 2;
+  height: 100%;
+  padding-left: 4vw;
+  position: relative;
+}
+.carousel-2-astronaut {
+  width: 60%;
+  height: auto;
+  left: 10vh;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.18));
+  position: relative;
+  z-index: 2;
+}
+.carousel-2-line-pattern {
+  position: absolute;
+  top: 6vh;
+  left: 4vw;
+  width: 80%;
+  min-width: 320px;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.95;
+}
+.carousel-2-right {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 2;
+  padding-right: 7vw;
+  padding-left: 2vw;
+}
+.carousel-2-btn {
+  background: #EF4D25;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 12px 48px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(239,77,37,0.08);
+  transition: background 0.2s;
+}
+.carousel-2-btn:hover {
+  background: #d13e1c;
+}
+.carousel-2-heading {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.carousel-2-heading .orange {
+  color: #EF4D25;
+}
+/* Overlay and right-aligned text for carousel-1 */
+.carousel-1 .carousel-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 95vh;
+  min-height: 95vh;
+}
+
+/* Carousel Slide 3 Styling */
+.carousel-3-bg-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.9;
+}
+/* Carousel 3 Styles */
+.carousel-3 {
+  position: relative;
+}
+.carousel-3 .carousel-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 95vh;
+  min-height: 95vh;
+  overflow: hidden;
+}
+.carousel-3-left {
+  flex: 1 1 50%;
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: 5vw;
+  padding-top: 4vh;
+  z-index: 2;
+}
+.carousel-3-tape {
+  position: absolute;
+  left: -160px;
+  bottom: -60px;
+  width: 110%;
+  max-width: none;
+  height: auto;
+  z-index: 1; 
+  pointer-events: none;
+}
+
+.carousel-3-info {
+  position: relative;
+  z-index: 3;
+  transform: translate(400px, -200px);
+}
+
+.carousel-3-circle-icon {
+  width: 48px;
+  height: auto;
+  margin-bottom: 16px;
+  transform: translateX(-12px);
+}
+.carousel-3-heading {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.carousel-3-btn {
+  background: #EF4D25;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 12px 48px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(239,77,37,0.08);
+  transition: background 0.2s;
+}
+.carousel-3-btn:hover {
+  background: #d13e1c;
+}
+.carousel-3-right {
+  flex: 1 1 50%;
+  position: relative;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: visible;
+  transform: translateX(200px);
+}
+
+.carousel-3-bg-full {
+  position: absolute;
+  left: 0;
+  bottom: 120px;
+  width: 55%;
+  height: auto;
+  z-index: 1;
+}
+
+.carousel-3-astronaut {
+  position: absolute;
+  left: 140px;
+  bottom: 0;
+  width: 50%;
+  height: auto;
+  z-index: 2;
+}
+

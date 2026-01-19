@@ -22,8 +22,6 @@
   }
 }
 
-/* Drawer styles for mobile navigation */
-/* Drawer backdrop (covers the whole screen) */
 #navbarDrawer {
   position: fixed;
   inset: 0;
@@ -66,27 +64,15 @@
 }
 
 /* navbar.css: Custom styles for Concept Labs navbar to match design */
-
 .navbar {
-  padding: 20px;
+  padding: 20px 100px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 1030;
 }
 
-.navbar .navbar-brand {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  font-size: 2.2rem;
-  letter-spacing: 0.1em;
-  color: var(--black, #231F20);
-  padding: 0;
-  margin-right: 2rem;
-}
-
-.navbar .navbar-brand img {
-  height: 48px;
+.nav-logo {
+  height: 40px;
   width: auto;
-  margin-right: 0.5rem;
 }
 
 .navbar-nav {

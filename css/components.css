@@ -1,18 +1,17 @@
 /* components.css: Custom UI components for Concept Labs */
 
 .btn-primary-custom {
-  background-color: var(--primary-color, #007bff);
+  background-color: var(--orange);
   color: #fff;
   border: none;
-  border-radius: var(--dummy-radius, 12px);
   padding: 0.5rem 1.5rem;
   font-family: var(--main-font);
   font-weight: 700;
-  transition: background 0.2s;
 }
 
 .btn-primary-custom:hover {
-  background-color: #0056b3;
+  background-color: none;
+  border: 2px solid var(--orange);
 }
 
 .btn-secondary-custom {
