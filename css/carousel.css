@@ -1,0 +1,12 @@
+/* carousel.css: Custom styles for the homepage carousel */
+
+#mainCarousel {
+  border-radius: var(--dummy-radius, 12px);
+  overflow: hidden;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.3);
+  border-radius: var(--dummy-radius, 12px);
+  padding: 1.5rem;
+}
