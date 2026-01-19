@@ -1,0 +1,77 @@
+/* Why Choose Section Styles */
+.why-choose-section {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  padding: 0 100px;
+}
+.why-choose-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/images/astronaut_space_fading.png') no-repeat right top;
+  background-size: cover;
+  z-index: 1;
+}
+.why-choose-content {
+  position: relative;
+  z-index: 2;
+  padding: 56px 32px 48px 32px;
+}
+.why-choose-title {
+  font-family: 'Oxanium', sans-serif;
+  font-size: var(--text-subheading-size, 48px);
+  font-weight: var(--text-title-weight, 800);
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  color: #111;
+}
+.why-choose-divider {
+  width: 130px;
+  border: 1.5px solid var(--black);
+  margin-top: var(--line-spacing-top);
+  margin-bottom: var(--line-spacing-bottom);
+}
+.why-choose-lead {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight0);
+  color: #111;
+  margin-bottom: 10px;
+  max-width: 540px;
+}
+.why-choose-lead strong {
+  font-weight: var(--text-heading-weight);
+  color: #111;
+}
+.why-choose-cards {
+  margin-top: 36px;
+  gap: 24px;
+}
+.why-choose-card {
+  background: var(--orange);
+  color: #fff;
+  padding: 24px 18px 18px 18px;
+  border-radius: 10px;
+}
+.why-choose-card h3 {
+  font-size: 20px;
+  font-weight: var(--text-subtext-bold-weight, 800);
+  margin-bottom: 8px;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.why-choose-card .divider-white {
+  width: 100%;
+  border: 1px solid #fff;
+  margin: 20px 0;
+}
+.why-choose-card p {
+  font-size: var( --text-body-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
+  color: #fff;
+  margin: 0;
+}

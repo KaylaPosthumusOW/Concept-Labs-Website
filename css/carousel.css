@@ -54,8 +54,8 @@
 
 .carousel-1 .carousel-heading {
   font-family: 'Oxanium', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: var(--text-heading-size, 40px);
+  font-weight: var(--text-heading-weight, 700);
   color: #222;
   margin-bottom: 18px;
   line-height: 1.1;
@@ -63,7 +63,8 @@
 }
 
 .carousel-1 .carousel-subheading {
-  font-size: 1.15rem;
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
   color: #444;
   margin-bottom: 28px;
 }
@@ -73,8 +74,8 @@
   color: #fff;
   border: none;
   padding: 14px 32px;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-bold-weight, 700);
   letter-spacing: 0.5px;
   box-shadow: 0 2px 8px rgba(239,77,37,0.08);
   transition: background 0.2s;

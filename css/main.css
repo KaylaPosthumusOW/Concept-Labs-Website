@@ -1,3 +1,16 @@
+/* Text Type Variables */
+:root {
+  --text-title-size: 48px;
+  --text-title-weight: 800;
+  --text-heading-size: 40px;
+  --text-heading-weight: 700;
+  --text-subheading-size: 28px;
+  --text-subheading-weight: 800;
+  --text-subtext-size: 24px;
+  --text-subtext-weight: 300;
+  --text-subtext-bold-weight: 700;
+  --text-body-size: 18px;
+}
 /* main.css: CSS Variables and base layout for Concept Labs */
 
 :root {
