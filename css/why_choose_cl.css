@@ -2,8 +2,9 @@
 .why-choose-section {
   position: relative;
   overflow: hidden;
-  padding: 0;
   padding: 0 100px;
+  margin-top: -45px;
+  z-index: 1000;
 }
 .why-choose-bg {
   position: absolute;
@@ -75,3 +76,78 @@
   color: #fff;
   margin: 0;
 }
+
+/* ✅ Tablet */
+@media (max-width: 991.98px) {
+  .why-choose-section {
+    padding: 0 32px;
+    margin-top: 0;
+  }
+
+  .why-choose-content {
+    padding: 48px 0 40px 0;
+  }
+
+  .why-choose-title {
+    font-size: 36px;
+  }
+
+  .why-choose-lead {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .why-choose-card p {
+    font-size: 16px;
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 575.98px) {
+  .why-choose-section {
+    padding: 0 18px;
+  }
+
+  .why-choose-title {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .why-choose-divider {
+    width: 90px;
+  }
+
+  .why-choose-lead {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .why-choose-card {
+    padding: 18px 16px;
+    border-radius: 10px;
+  }
+
+  .why-choose-card h3 {
+    font-size: 18px;
+  }
+
+  .why-choose-card p {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .why-choose-bg {
+    background-position: right center;
+    opacity: 0.35; /* optional: softer on smaller screens */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .why-choose-bg {
+    background-position: center top;
+    opacity: 0.25;
+  }
+}
+
