@@ -1,276 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Concept Labs</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept Labs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Google Fonts: Oxanium -->
-        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
-        
-        <!-- Main CSS with variables and layout -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/carousel.css">
-        <link rel="stylesheet" href="css/components.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/why_choose_cl.css">
-        <link rel="stylesheet" href="css/trajectory.css">
-        <link rel="stylesheet" href="css/launch_steps.css">
-        <link rel="stylesheet" href="css/launch_record.css">
-</head>
-<body>
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/svgs/concept_labs_logo.svg" alt="Concept Labs Logo" class="nav-logo" />
-                </a>
-                <button class="navbar-toggler" type="button" id="drawerToggle" aria-label="Open navigation menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item d-none d-lg-block">
-                            <button class="chat-btn">CHAT WITH US</button>
-                        </li>
-                    </ul>
+    <!-- Google Fonts: Oxanium -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS with variables and layout -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/why_choose_cl.css">
+    <link rel="stylesheet" href="css/trajectory.css">
+    <link rel="stylesheet" href="css/launch_steps.css">
+    <link rel="stylesheet" href="css/launch_record.css">
+    <link rel="stylesheet" href="css/cta.css">
+    <link rel="stylesheet" href="css/faq.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/svgs/concept_labs_logo.svg" alt="Concept Labs Logo" class="nav-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" id="drawerToggle" aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <button class="chat-btn">CHAT WITH US</button>
+            </li>
+          </ul>
+        </div>
+        <!-- Drawer for mobile navigation -->
+        <div id="navbarDrawer" class="drawer-backdrop">
+          <div>
+            <button id="drawerClose" style="align-self:flex-end;background:none;border:none;font-size:2rem;line-height:1;">&times;</button>
+            <a class="nav-link active" href="#" style="font-weight:700;color:var(--orange,#EF4D25);">HOME</a>
+            <a class="nav-link" href="#" style="font-weight:700;">ABOUT US</a>
+            <button class="chat-btn" style="width:100%;margin-left:0;">CHAT WITH US</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header with Carousel -->
+    <header>
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Carousel 1 Start -->
+          <div class="carousel-item active carousel-1">
+            <div class="carousel-content">
+              <div class="carousel-left">
+                <img src="assets/images/carousel_1_astronaut.png" alt="Astronaut" class="carousel-astronaut">
+              </div>
+              <div class="carousel-right">
+                <div class="carousel-top">
+                  <span class="carousel-trophy">
+                    <img src="assets/icons/trophy.svg" alt="Trophy" class="carousel-trophy">
+                  </span>
+                  <span class="carousel-tagline">More than 200 ideas transformed into registered, market-ready companies.</span>
                 </div>
-                <!-- Drawer for mobile navigation -->
-                    <div id="navbarDrawer" class="drawer-backdrop"><div>
-                    <button id="drawerClose" style="align-self:flex-end;background:none;border:none;font-size:2rem;line-height:1;">&times;</button>
-                    <a class="nav-link active" href="#" style="font-weight:700;color:var(--orange,#EF4D25);">HOME</a>
-                    <a class="nav-link" href="#" style="font-weight:700;">ABOUT US</a>
-                    <button class="chat-btn" style="width:100%;margin-left:0;">CHAT WITH US</button>
-                  </div>
+                <div class="carousel-divider"></div>
+
+                <h2 class="carousel-heading">TURN YOUR IDEA INTO A REAL BUSINESS</h2>
+                <p class="carousel-subheading">
+                  We turn your idea into a <strong>registered</strong>, <strong>branded</strong>, and <strong>visible company</strong>.
+                </p>
+                <button class="btn-primary-custom">START YOUR BUSINESS TODAY</button>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel 2 -->
+          <div class="carousel-item carousel-2">
+            <div class="carousel-content">
+              <img src="assets/svgs/grid_background_ovelay.svg" alt="Grid Background" class="carousel-2-bg">
+              <div class="carousel-2-left">
+                <img src="assets/svgs/line_pattern.svg" alt="Line Pattern" class="carousel-2-line-pattern">
+                <img src="assets/images/carousel_2_astronaut_sitting_on_rock.png" alt="Astronaut Sitting" class="carousel-2-astronaut">
+              </div>
+              <div class="carousel-2-right">
+                <button class="btn-primary-custom carousel-2-btn">CONTACT US</button>
+                <h2 class="carousel-2-heading">
+                  IMAGINE <span class="orange">HAVING</span><br>
+                  THE <span class="orange">BLUEPRINT</span><br>
+                  FOR YOU <span class="orange">FUTURE<br>SUCCESS</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel 3 Start -->
+          <div class="carousel-item carousel-3">
+            <div class="carousel-content">
+              <div class="carousel-3-left">
+                <div class="carousel-3-info">
+                  <img src="assets/icons/circle_with_line_through.svg" alt="circle icon" class="carousel-3-circle-icon">
+                  <h2 class="carousel-3-heading">WE LAUNCH<br>YOUR IDEA IN 3<br>EASY STEPS</h2>
+                  <button class="btn-primary-custom carousel-3-btn">SEE STEPS</button>
                 </div>
-            </div>
-        </nav>
-
-        <!-- Header with Carousel -->
-        <header>
-            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Carousel 1 Start -->
-                    <div class="carousel-item active carousel-1">
-                      <div class="carousel-content">
-                        <div class="carousel-left">
-                          <img src="assets/images/carousel_1_astronaut.png" alt="Astronaut" class="carousel-astronaut">
-                        </div>
-                        <div class="carousel-right">
-                          <div class="carousel-top">
-                            <span class="carousel-trophy">
-                              <img src="assets/icons/trophy.svg" alt="Trophy" class="carousel-trophy">
-                            </span>
-                            <span class="carousel-tagline">More than 200 ideas transformed into registered, market-ready companies.</span>
-                          </div>
-                          <div class="carousel-divider"></div>
-                          <h2 class="carousel-heading">TURN YOUR IDEA INTO A REAL BUSINESS</h2>
-                          <p class="carousel-subheading">
-                            We turn your idea into a <strong>registered</strong>, <strong>branded</strong>, and <strong>visible company</strong>.
-                          </p>
-                          <button class="btn-primary-custom">START YOUR BUSINESS TODAY</button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Carousel 2 -->
-                    <div class="carousel-item carousel-2">
-                      <div class="carousel-content">
-                        <img src="assets/svgs/grid_background_ovelay.svg" alt="Grid Background" class="carousel-2-bg">
-                        <div class="carousel-2-left">
-                            <img src="assets/svgs/line_pattern.svg" alt="Line Pattern" class="carousel-2-line-pattern">
-                            <img src="assets/images/carousel_2_astronaut_sitting_on_rock.png" alt="Astronaut Sitting" class="carousel-2-astronaut">
-                        </div>
-                        <div class="carousel-2-right">
-                          <button class="btn-primary-custom carousel-2-btn">CONTACT US</button>
-                          <h2 class="carousel-2-heading">
-                            IMAGINE <span class="orange">HAVING</span><br>
-                            THE <span class="orange">BLUEPRINT</span><br>
-                            FOR YOU <span class="orange">FUTURE<br>SUCCESS</span>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Carousel 3 Start -->
-                    <div class="carousel-item carousel-3">
-                      <div class="carousel-content">
-                        <div class="carousel-3-left">
-                          <div class="carousel-3-info">
-                            <img src="assets/icons/circle_with_line_through.svg" alt="circle icon" class="carousel-3-circle-icon">
-                            <h2 class="carousel-3-heading">WE LAUNCH<br>YOUR IDEA IN 3<br>EASY STEPS</h2>
-                            <button class="btn-primary-custom carousel-3-btn">SEE STEPS</button>
-                          </div>
-                          <img src="assets/images/carousel_3_tape.png" alt="Tape" class="carousel-3-tape">
-                        </div>
-                        <div class="carousel-3-right">
-                          <img src="assets/images/grid_block_small.png" alt="Grid Background" class="carousel-3-bg-full">
-                          <img src="assets/images/carousel_3_astronaut_sitting.png" alt="Astronaut Sitting" class="carousel-3-astronaut">
-                        </div>
-                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </header>
-
-        <!-- Why Choose Section Start -->
-        <section class="why-choose-section">
-          <div class="why-choose-bg"></div>
-          <div class="why-choose-content">
-            <h2 class="why-choose-title">WHY PEOPLE CHOOSE CONCEPTLABS®</h2>
-            <div class="why-choose-divider"></div>
-            <p class="why-choose-lead">
-              We don’t just help you <strong>start a business</strong>.<br>
-              We <strong>protect you</strong> from wasting your money,
-            </p>
-            <p class="why-choose-lead">
-              by first <strong>proving your idea is strong</strong>.<br>
-              Then we build everything around it so you <strong>launch with confidence</strong>.
-            </p>
-            <div class="row g-3 why-choose-cards">
-              <div class="col why-choose-card">
-                <h3>CLARITY<br>FROM THE START</h3>
-                <div class="divider-white"></div>
-                <p>No more guessing what to do next, we help you see the full path from idea to launch.</p>
+                <img src="assets/images/carousel_3_tape.png" alt="Tape" class="carousel-3-tape">
               </div>
-              <div class="col why-choose-card">
-                <h3>LESS ADMIN,<br>MORE PROGRESS</h3>
-                <div class="divider-white"></div>
-                <p>We handle the paperwork, registrations, and setup so you can focus on building your dream.</p>
-              </div>
-              <div class="col why-choose-card">
-                <h3>LOOK PROFESSIONAL<br>FROM DAY 1</h3>
-                <div class="divider-white"></div>
-                <p>You get a brand and online presence that makes people take you seriously.</p>
-              </div>
-              <div class="col why-choose-card">
-                <h3>CONFIDENCE<br>TO MOVE FORWARD</h3>
-                <div class="divider-white"></div>
-                <p>Every decision is backed by experience, no more “what if it doesn’t work?”</p>
-              </div>
-              <div class="col why-choose-card">
-                <h3>BUILD<br>TO GROW</h3>
-                <div class="divider-white"></div>
-                <p>What we create today can scale tomorrow, giving you a solid foundation for the future.</p>
+              <div class="carousel-3-right">
+                <img src="assets/images/grid_block_small.png" alt="Grid Background" class="carousel-3-bg-full">
+                <img src="assets/images/carousel_3_astronaut_sitting.png" alt="Astronaut Sitting" class="carousel-3-astronaut">
               </div>
             </div>
           </div>
-        </section>
-        <!-- Why Choose Section End -->
+        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
 
 
-        <!-- Trajectory Section Start -->
-        <section class="trajectory-section">
-          <div class="trajectory-content">
-            <div class="trajectory-text">
-              <h2 class="trajectory-title">TRAJECTORY</h2>
-              <div class="trajectory-divider"></div>
-              <p class="trajectory-lead">
-                At ConceptLABS®, we help you do more than just dream about your business, we set it up for real. When you come to us with <strong>your idea, we turn it into a business</strong> from the ground up.
-              </p>
-              <p class="trajectory-lead">
-                <strong>We handle the essentials:</strong> registering your company, creating your brand, building your digital presence, and giving you a clear business plan for growth. The result? You don’t just have an idea anymore, you have a business <strong>ready to launch</strong>, with everything in place to succeed.
-              </p>
-            </div>
-            <div class="trajectory-img-wrap">
-              <img src="assets/images/trajectory_astronaut_lounging.png" alt="Astronaut Lounging" class="trajectory-img">
+    <!-- Why Choose Section Start -->
+    <section class="why-choose-section">
+      <div class="why-choose-bg"></div>
+      <div class="why-choose-content">
+        <h2 class="why-choose-title">WHY PEOPLE CHOOSE CONCEPTLABS®</h2>
+        <div class="why-choose-divider"></div>
+        <p class="why-choose-lead">
+          We don’t just help you <strong>start a business</strong>.<br>
+          We <strong>protect you</strong> from wasting your money,
+        </p>
+        <p class="why-choose-lead">
+          by first <strong>proving your idea is strong</strong>.<br>
+          Then we build everything around it so you <strong>launch with confidence</strong>.
+        </p>
+        <div class="row g-3 why-choose-cards">
+          <div class="col why-choose-card">
+            <h3>CLARITY<br>FROM THE START</h3>
+            <div class="divider-white"></div>
+            <p>No more guessing what to do next, we help you see the full path from idea to launch.</p>
+          </div>
+          <div class="col why-choose-card">
+            <h3>LESS ADMIN,<br>MORE PROGRESS</h3>
+            <div class="divider-white"></div>
+            <p>We handle the paperwork, registrations, and setup so you can focus on building your dream.</p>
+          </div>
+          <div class="col why-choose-card">
+            <h3>LOOK PROFESSIONAL<br>FROM DAY 1</h3>
+            <div class="divider-white"></div>
+            <p>You get a brand and online presence that makes people take you seriously.</p>
+          </div>
+          <div class="col why-choose-card">
+            <h3>CONFIDENCE<br>TO MOVE FORWARD</h3>
+            <div class="divider-white"></div>
+            <p>Every decision is backed by experience, no more “what if it doesn’t work?”</p>
+          </div>
+          <div class="col why-choose-card">
+            <h3>BUILD<br>TO GROW</h3>
+            <div class="divider-white"></div>
+            <p>What we create today can scale tomorrow, giving you a solid foundation for the future.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Section End -->
+
+
+
+    <!-- Trajectory Section Start -->
+    <section class="trajectory-section">
+      <div class="trajectory-content">
+        <div class="trajectory-text">
+          <h2 class="trajectory-title">TRAJECTORY</h2>
+          <div class="trajectory-divider"></div>
+          <p class="trajectory-lead">
+            At ConceptLABS®, we help you do more than just dream about your business, we set it up for real. When you come to us with <strong>your idea, we turn it into a business</strong> from the ground up.
+          </p>
+          <p class="trajectory-lead">
+            <strong>We handle the essentials:</strong> registering your company, creating your brand, building your digital presence, and giving you a clear business plan for growth. The result? You don’t just have an idea anymore, you have a business <strong>ready to launch</strong>, with everything in place to succeed.
+          </p>
+        </div>
+        <div class="trajectory-img-wrap">
+          <img src="assets/images/trajectory_astronaut_lounging.png" alt="Astronaut Lounging" class="trajectory-img">
+        </div>
+      </div>
+      <div class="trajectory-launch">
+        <h3 class="trajectory-launch-title">3...2...1 LAUNCH!</h3>
+        <div class="trajectory-launch-divider"></div>
+        <p class="trajectory-launch-lead">
+          By the time you leave ConceptLABS®, you don’t just have an idea, you have a fully set up business ready to launch and grow.
+        </p>
+      </div>
+    </section>
+    <!-- Trajectory Section End -->
+
+
+
+    <!-- Launch Steps Section Start -->
+    <section class="launch-steps-section">
+      <div class="launch-steps-container">
+        <div class="launch-step launch-step-foundation">
+          <div class="launch-step-title">VALIDATE THE FOUNDATION</div>
+          <div class="launch-step-desc-dark">We make sure your idea is solid before anything else.</div>
+          <div class="launch-step-index">
+            <span class="step-top">0</span>
+            <span class="step-slash">/</span>
+            <span class="step-bottom">3</span>
+          </div>
+        </div>
+        <div class="launch-steps-row">
+          <div class="launch-step launch-step-entity">
+            <img src="assets/icons/square_pattern.png" alt="Entity Icon" class="entity-icon"/>
+            <div class="launch-step-title">ENTITY</div>
+            <div class="launch-step-desc">We give your idea a home.</div>
+            <div class="launch-step-index">
+              <span class="step-top">1</span>
+              <span class="step-slash">/</span>
+              <span class="step-bottom">3</span>
             </div>
           </div>
-          <div class="trajectory-launch">
-            <h3 class="trajectory-launch-title">3...2...1 LAUNCH!</h3>
-            <div class="trajectory-launch-divider"></div>
-            <p class="trajectory-launch-lead">
-              By the time you leave ConceptLABS®, you don’t just have an idea, you have a fully set up business ready to launch and grow.
-            </p>
-            
-          </div>
-        </section>
-        <!-- Trajectory Section End -->
-
-
-        <!-- Launch Steps Section Start -->
-        <section class="launch-steps-section">
-          <div class="launch-steps-container">
-            <div class="launch-step launch-step-foundation">
-              <div class="launch-step-title">VALIDATE THE FOUNDATION</div>
-              <div class="launch-step-desc-dark">We make sure your idea is solid before anything else.</div>
-              <div class="launch-step-index">
-                <span class="step-top">0</span>
-                <span class="step-slash">/</span>
-                <span class="step-bottom">3</span>
-              </div>
-            </div>
-            <div class="launch-steps-row">
-              <div class="launch-step launch-step-entity">
-                <img src="assets/icons/square_pattern.png" alt="Entity Icon" class="entity-icon"/>
-                <div class="launch-step-title">ENTITY</div>
-                <div class="launch-step-desc">We give your idea a home.</div>
-                <div class="launch-step-index">
-                <span class="step-top">1</span>
-                <span class="step-slash">/</span>
-                <span class="step-bottom">3</span>
-              </div>
-              </div>
-              <div class="launch-step launch-step-brand">
-                  <span class="brand-icon-placeholder"></span>
-                  <div class="launch-step-title">BRAND</div>
-                  <div class="launch-step-desc">We give your company a face and voice.</div>
-                  <div class="launch-step-index">
-                    <span class="step-top">2</span>
-                    <span class="step-slash">/</span>
-                    <span class="step-bottom">3</span>
-                  </div>
-                </div>
-              <div class="launch-step launch-step-presence">
-                <img src="assets/icons/line-pattern.png" alt="Entity Icon" class="presence-icon"/>
-                <div class="launch-step-title">PRESENCE</div>
-                <div class="launch-step-desc">We make sure people can find and trust you.</div>
-                <div class="launch-step-index">
-                <span class="step-top">3</span>
-                <span class="step-slash">/</span>
-                <span class="step-bottom">3</span>
-              </div>
-              </div>
-            </div>
-            <div class="launch-steps-summary">
-              <span>WE VALIDATE <span class="orange">IDEAS</span>, REMOVE THE <span class="orange">ADMIN</span>, AND GIVE FOUNDERS THE <span class="orange">FOUNDATION</span> TO LAUNCH SMART AND <span class="orange">GROW STRONG.</span></span>
+          <div class="launch-step launch-step-brand">
+            <span class="brand-icon-placeholder"></span>
+            <div class="launch-step-title">BRAND</div>
+            <div class="launch-step-desc">We give your company a face and voice.</div>
+            <div class="launch-step-index">
+              <span class="step-top">2</span>
+              <span class="step-slash">/</span>
+              <span class="step-bottom">3</span>
             </div>
           </div>
-        </section>
-        <!-- Launch Steps Section End -->
-
-
-        <!-- Launch Record Section Start -->
-        <section class="launch-record-section">
-          <div class="launch-record-container">
-            <h2 class="launch-record-title">OUR LAUNCH RECORD</h2>
-            <div class="launch-record-divider"></div>
-            <p class="launch-record-lead">
-              Our launch rate speaks for itself, here are some of the incredible clients we've helped reach new heights.
-            </p>
-            <div class="launch-record-brands">
-              <h5>-----------------TODO: Add List of updated brands here-----------------</h5>
+          <div class="launch-step launch-step-presence">
+            <img src="assets/icons/line-pattern.png" alt="Entity Icon" class="presence-icon"/>
+            <div class="launch-step-title">PRESENCE</div>
+            <div class="launch-step-desc">We make sure people can find and trust you.</div>
+            <div class="launch-step-index">
+              <span class="step-top">3</span>
+              <span class="step-slash">/</span>
+              <span class="step-bottom">3</span>
             </div>
           </div>
-        </section>
-        <!-- Launch Record Section End -->
+        </div>
+        <div class="launch-steps-summary">
+          <span>WE VALIDATE <span class="orange">IDEAS</span>, REMOVE THE <span class="orange">ADMIN</span>, AND GIVE FOUNDERS THE <span class="orange">FOUNDATION</span> TO LAUNCH SMART AND <span class="orange">GROW STRONG.</span></span>
+        </div>
+      </div>
+    </section>
+    <!-- Launch Steps Section End -->
 
 
-        <!-- Bootstrap JS Bundle (includes Popper) -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Navbar drawer logic -->
-        <script src="js/burger_menu.js"></script>
-</body>
+
+    <!-- Launch Record Section Start -->
+    <section class="launch-record-section">
+      <div class="launch-record-container">
+        <h2 class="launch-record-title">OUR LAUNCH RECORD</h2>
+        <div class="launch-record-divider"></div>
+        <p class="launch-record-lead">
+          Our launch rate speaks for itself, here are some of the incredible clients we've helped reach new heights.
+        </p>
+        <div class="launch-record-brands">
+          <h5>-----------------TODO: Add List of updated brands here-----------------</h5>
+        </div>
+      </div>
+    </section>
+    <!-- Launch Record Section End -->
+
+
+
+    <!-- FAQ Section Start -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-title">FAQS</h2>
+            <div class="faq-divider"></div>
+
+            <div class="faq-accordions" id="faqAccordions"></div>
+        </div>
+    </section>
+
+    <!-- FAQ Section End -->
+
+    <!-- CTA Section Start -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <img src="assets/images/jumping_astronaut.png" alt="Jumping Astronaut" class="cta-astronaut" />
+        <div class="cta-content">
+          <h2 class="cta-title">READY TO START YOUR BUSINESS THE RIGHT WAY?</h2>
+          <div class="cta-divider"></div>
+          <div class="cta-lead">
+            Stop guessing, stop delaying, let’s build the foundation your idea deserves.<br><br>
+            <strong>Book your first session</strong> and we’ll help you turn your idea into a registered, branded, and launch-ready business.
+          </div>
+          <button class="cta-btn">LET'S GET STARTED</button>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Services Section Start -->
+    <section class="services-section">
+      <div class="services-container">
+        <img src="assets/images/rocket_wordcloud.png" alt="Rocket Wordcloud" class="services-rocket" />
+        <div class="services-card">OUR SERVICES</div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Navbar drawer logic -->
+    <script src="js/burger_menu.js"></script>
+    <!-- FAQ accordion logic -->
+    <script src="js/faq_questions_and_answers.js"></script>
+  </body>
 </html>
