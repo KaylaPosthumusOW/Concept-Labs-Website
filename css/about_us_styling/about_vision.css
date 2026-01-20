@@ -1,0 +1,96 @@
+/* About Us Section 2: Vision */
+.about-vision-section {
+  background: var(--orange, #EF4D25);
+  color: #fff;
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  font-family: 'Oxanium', sans-serif;
+  overflow: hidden;
+}
+.about-vision-container {
+  margin: 0 auto;
+  padding: 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+}
+.about-vision-content {
+  flex: 1 1 420px;
+  min-width: 320px;
+  z-index: 2;
+}
+.about-vision-title {
+  font-size: var(--text-subheading-size, 28px);
+  font-weight: var(--text-subheading-weight, 800);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.about-vision-divider {
+  width: 130px;
+  border: 1.5px solid var(--white);
+  margin-top: var(--line-spacing-top);
+  margin-bottom: var(--line-spacing-bottom);
+}
+.about-vision-text {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
+  color: #fff;
+  margin-bottom: 18px;
+  width: 60%;
+}
+.about-vision-text-right {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
+  color: #fff;
+  margin-bottom: 18px;
+  width: 55%;
+  margin-left: auto;
+  margin-top: 50px;
+}
+.about-vision-text strong {
+  font-weight: 800;
+}
+.about-vision-text-right strong {
+  font-weight: 800;
+}
+.about-vision-text .admin {
+  color: #fff;
+  font-weight: 700;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+.about-vision-astronaut {
+  position: absolute;
+  right: 0;
+  top: 24px;
+  width: 340px;
+  max-width: 40vw;
+  z-index: 1;
+  pointer-events: none;
+}
+/* Moon image bottom left, touches section bottom */
+.about-vision-moon {
+  position: absolute;
+  left: 50;
+  bottom: 0;
+  width: 40%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .about-vision-container {
+    flex-direction: column;
+    padding: 32px 12px 32px 12px;
+  }
+  .about-vision-astronaut {
+    position: static;
+    width: 180px;
+    max-width: 80vw;
+    margin: 24px auto 0 auto;
+    display: block;
+  }
+}

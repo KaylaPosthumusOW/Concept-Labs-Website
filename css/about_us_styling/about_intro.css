@@ -1,0 +1,71 @@
+/* Overlay astronaut across both sections */
+.about-overlay-astronaut {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  width: 50%;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+/* About Us Section 1: Intro */
+.about-intro-section {
+  background: #fff;
+  padding: 50px 100px;
+  position: relative;
+  width: 100%;
+  font-family: 'Oxanium', sans-serif;
+}
+/* Black background block behind logo */
+.about-intro-logo-bg {
+  padding-right: 60px;
+  background: var(--black, #231f20);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+  height: 160px;
+  margin-bottom: 40px;
+  transform: translateX(-200px);
+}
+.about-intro-logo {
+  width: 550px;
+  height: auto;
+  display: block;
+}
+.about-intro-title {
+  font-size: var(--text-subheading-size, 28px);
+  font-weight: var(--text-subheading-weight, 800);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #232121;
+}
+.about-intro-divider {
+  width: 130px;
+  border: 1.5px solid var(--black);
+  margin-top: var(--line-spacing-top);
+  margin-bottom: var(--line-spacing-bottom);
+}
+.about-intro-text {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
+  color: #232121;
+  max-width: 40%;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .about-intro-container {
+    padding: 0 12px;
+  }
+  .about-intro-logo {
+    width: 200px;
+  }
+  .about-overlay-astronaut {
+    position: static;
+    width: 180px;
+    max-width: 80vw;
+    margin: 24px auto 0 auto;
+    display: block;
+  }
+}
