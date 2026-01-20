@@ -119,7 +119,9 @@
   margin-bottom: 18px;
   visibility: hidden;
 }
-.launch-steps-summary {
+
+/* CHANGE BACK LATER */
+/* .launch-steps-summary {
   margin: 20px 240px ;
   font-size: var(--text-title-size, 40px);
   font-weight: var(--text-title-weight, 800);
@@ -131,7 +133,26 @@
 .launch-steps-summary .orange {
   color: var(--orange);
   font-weight: var(--text-title-weight, 800);
+} */
+
+/* TEMPORARY */
+.launch-steps-summary {
+  margin-top: 50px;
+  background-color: var(--black);
+  padding: 60px 350px ;
+  font-size: var(--text-title-size, 40px);
+  font-weight: var(--text-title-weight, 800);
+  text-align: center;
+  color: #fff;
+  font-family: 'Oxanium', sans-serif;
+  text-transform: uppercase;
 }
+.launch-steps-summary .orange {
+  color: var(--orange);
+  font-weight: var(--text-title-weight, 800);
+}
+
+
 .launch-step-brand {
   background-color: var(--orange);
   background-image: url('../assets/svgs/grid_background_ovelay.svg');
