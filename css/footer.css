@@ -57,6 +57,7 @@
   background: #d13e1c;
 }
 .footer-socials {
+  margin-top: 16px;
   display: flex;
   gap: 16px;
   margin-bottom: 32px;

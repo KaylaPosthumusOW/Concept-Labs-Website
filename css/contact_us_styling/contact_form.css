@@ -115,26 +115,6 @@
   margin-top: 10px;
 }
 
-/* Submit button */
-.contact-form-submit {
-  width: 120px;
-  height: 38px;
-  background: #1f1f1f;
-  color: #fff;
-  border: none;
-  font-family: "Oxanium", sans-serif;
-  font-weight: 800;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: transform 0.15s ease, background 0.2s ease;
-}
-
-.contact-form-submit:hover {
-  background: #111;
-  transform: translateY(-1px);
-}
-
 /* Moon rocks overlaps bottom */
 .contact-form-moonrocks {
   width: 100%;

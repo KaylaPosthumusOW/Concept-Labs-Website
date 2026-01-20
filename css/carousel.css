@@ -53,12 +53,10 @@
 }
 
 .carousel-1 .carousel-heading {
-  font-family: 'Oxanium', sans-serif;
   font-size: var(--text-heading-size, 40px);
   font-weight: var(--text-heading-weight, 700);
-  color: #222;
+  color: var(--black);
   margin-bottom: 18px;
-  line-height: 1.1;
   text-transform: uppercase;
 }
 
@@ -67,21 +65,6 @@
   font-weight: var(--text-subtext-weight, 300);
   color: #444;
   margin-bottom: 28px;
-}
-
-.carousel-1 .btn-primary-custom {
-  background: var(--orange);
-  color: #fff;
-  border: none;
-  padding: 14px 32px;
-  font-size: var(--text-subtext-size, 24px);
-  font-weight: var(--text-subtext-bold-weight, 700);
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 8px rgba(239,77,37,0.08);
-  transition: background 0.2s;
-}
-.carousel-1 .btn-primary-custom:hover {
-  background: #d13e1c;
 }
 
 #mainCarousel {
@@ -161,29 +144,12 @@
   padding-right: 7vw;
   padding-left: 2vw;
 }
-.carousel-2-btn {
-  background: #EF4D25;
-  color: #fff;
-  border: none;
-  border-radius: 2px;
-  padding: 12px 48px;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 32px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 8px rgba(239,77,37,0.08);
-  transition: background 0.2s;
-}
-.carousel-2-btn:hover {
-  background: #d13e1c;
-}
 .carousel-2-heading {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #222;
-  line-height: 1.1;
+  font-size: var(--text-heading-size);
+  font-weight: var(--text-heading-weight, 700);
+  color: var(--black);
   text-transform: uppercase;
+  margin-top: 24px;
 }
 .carousel-2-heading .orange {
   color: #EF4D25;
@@ -259,11 +225,9 @@
   transform: translateX(-12px);
 }
 .carousel-3-heading {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #222;
-  line-height: 1.1;
+  font-size: var(--text-heading-size);
+  font-weight: var(--text-heading-weight, 700);
+  color: var(--black);
   text-transform: uppercase;
   margin-bottom: 22px;
 }
