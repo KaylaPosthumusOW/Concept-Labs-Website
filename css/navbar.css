@@ -77,7 +77,7 @@
 
 .navbar-nav {
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .navbar-nav .nav-link {
@@ -110,15 +110,21 @@
   border: none;
   border-radius: 0;
   padding: 0.7rem 2.2rem;
-  margin-left: 2.5rem;
   transition: background 0.2s;
   box-shadow: none;
   text-decoration: none;
 }
 
 .navbar .chat-btn:hover {
-  background: #c63a13;
-  color: #fff;
+  border: 2px solid var(--orange);
+  background: #fff;
+  color: var(--orange);
+}
+
+.navbar .chat-btn.active {
+  border: 2px solid var(--orange);
+  background: #fff;
+  color: var(--orange);
 }
 
 .navbar-toggler {

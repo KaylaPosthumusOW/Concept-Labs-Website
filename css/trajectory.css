@@ -23,8 +23,6 @@
 .trajectory-title {
   font-size: var(--text-heading-size, 40px);
   font-weight: var(--text-heading-weight, 700);
-  margin-bottom: 18px;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 .trajectory-divider {

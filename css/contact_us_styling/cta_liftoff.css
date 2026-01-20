@@ -1,0 +1,62 @@
+/* CTA: Ready for Lift-Off Section */
+.cta-liftoff-section {
+  width: 100%;
+  background: #fff;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cta-liftoff-container {
+  width: 40%;
+}
+
+.cta-liftoff-title {
+  font-size: var(--text-subheading-size, 40px);
+  font-weight: var(--text-subheading-weight, 700);
+}
+
+.cta-liftoff-divider {
+  width: 130px;
+  border: 1.5px solid var(--black);
+  margin-top: var(--line-spacing-top);
+  margin-bottom: var(--line-spacing-bottom);
+}
+
+.cta-liftoff-desc {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
+  margin-bottom: 24px;
+}
+
+.cta-liftoff-btn {
+  display: block;
+  width: 100%;
+  background: var(--orange);
+  color: #fff;
+  font-family: 'Oxanium', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 0;
+  border: none;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.cta-liftoff-btn:hover {
+  background: #b93f1e;
+}
+
+@media (max-width: 600px) {
+  .cta-liftoff-container {
+    margin-left: 12px;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .cta-liftoff-section {
+    padding: 24px 0 0 0;
+  }
+}

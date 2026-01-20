@@ -12,9 +12,12 @@
 
     <!-- Main CSS with variables and layout -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contact_us_styling/cta_liftoff.css">
+    <link rel="stylesheet" href="../css/contact_us_styling/contact_form.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
 </head>
 <body>
 
@@ -36,7 +39,7 @@
               <a class="nav-link" href="about_page.html">ABOUT US</a>
             </li>
             <li class="nav-item d-none d-lg-block">
-              <a href="contact_us_page.html" class="chat-btn">CHAT WITH US</a>
+              <a href="contact_us_page.html" class="chat-btn active">CHAT WITH US</a>
             </li>
           </ul>
         </div>
@@ -52,6 +55,93 @@
         </div>
       </div>
     </nav>
+
+        <!-- CTA: Ready for Lift-Off? -->
+    <section class="cta-liftoff-section">
+      <div class="cta-liftoff-container">
+        <div class="cta-liftoff-title">READY FOR LIFT-OFF?</div>
+        <div class="cta-liftoff-divider"></div>
+        <div class="cta-liftoff-desc">Book a consultation to kickstart your next big idea with the right strategy.</div>
+        <a href="#" class="cta-liftoff-btn">BOOK A CONSULTATION</a>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="contact-form-row">
+
+            <!-- LEFT IMAGE -->
+            <div class="contact-form-left">
+            <img
+                src="../assets/images/astronaut_jumping_smoke.png"
+                alt="Astronaut Jumping"
+                class="contact-form-astronaut"
+            />
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div class="contact-form-right">
+            <div class="contact-form-title">GOT A SPARK?</div>
+            <div class="contact-form-divider"></div>
+
+            <div class="contact-form-desc">
+                Drop us a message and let’s see how we can<br />
+                fuel your next big creation.
+            </div>
+
+            <form class="contact-form-fields">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Name" required />
+
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="Email" required />
+
+                <label for="contact-idea">Your Idea</label>
+                <textarea id="contact-idea" name="idea" placeholder="Tell us about your project/ business..." required></textarea>
+
+                <div class="contact-form-actions">
+                <button type="submit" class="contact-form-submit">SUBMIT</button>
+                </div>
+            </form>
+            </div>
+
+        </div>
+
+        <img src="../assets/images/moon_rocks.png" alt="Moon Rocks" class="contact-form-moonrocks" />
+    </section>
+
+
+     <!-- Footer Section Start -->
+      <footer class="footer-section">
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="footer-title">GET IN TOUCH</div>
+            <div class="footer-divider"></div>
+            <a href="mailto:hello@conc3ptlabs.com" class="footer-email">hello@conc3ptlabs.com</a>
+            <button class="footer-btn">LAUNCH HERE</button>
+            <div class="footer-socials">
+              <a href="#" aria-label="LinkedIn"><img src="../assets/svgs/linkedIn.svg" alt="LinkedIn" /></a>
+              <a href="#" aria-label="Instagram"><img src="../assets/svgs/instagram.svg" alt="Instagram" /></a>
+              <a href="#" aria-label="Facebook"><img src="../assets/svgs/facebook.svg" alt="Facebook" /></a>
+            </div>
+            <div class="footer-location">
+              <div class="footer-location-title">PRETORIA</div>
+              <div class="footer-location-details">
+                Headquarters<br>
+                194 Bancor Avenue Park Lane West<br>
+                Building, Menlyn Maine, Pretoria
+              </div>
+            </div>
+          </div>
+          <div class="footer-paper">
+            <img src="../assets/images/dm_us_textured_paper.png" alt="DM Us Textured Paper" class="footer-paper-img" />
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © ConceptLABS® (Pty) Ltd 2025 | Website Development by Spaza | Designed by <a href="#">Nicola Prinsloo</a>
+        </div>
+      </footer>
+      <!-- Footer Section End -->
 
     <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

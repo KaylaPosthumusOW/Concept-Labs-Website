@@ -1,0 +1,181 @@
+/* Contact Form Section */
+.contact-form-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Two-column layout */
+.contact-form-row {
+  display: flex;
+  width: 100%;
+  min-height: 520px;
+}
+
+/* LEFT SIDE */
+.contact-form-left {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--black);
+}
+
+/* Astronaut image fills left side */
+.contact-form-astronaut {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+}
+
+/* RIGHT SIDE */
+.contact-form-right {
+  flex: 1;
+  background: #ef4d25;
+  color: #fff;
+
+  /* same spacing look */
+  padding: 48px 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Title */
+.contact-form-title {
+  font-size: var(--text-subheading-size, 40px);
+  font-weight: var(--text-subheading-weight, 700);
+  text-transform: uppercase;
+}
+
+/* Divider */
+.contact-form-divider {
+  width: 130px;
+  border: 1.5px solid var(--white);
+  margin-top: var(--line-spacing-top);
+  margin-bottom: var(--line-spacing-bottom);
+}
+
+/* Description */
+.contact-form-desc {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
+  margin-bottom: 24px;
+}
+
+/* Form */
+.contact-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Labels */
+.contact-form-fields label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 6px;
+}
+
+/* Inputs + textarea */
+.contact-form-fields input,
+.contact-form-fields textarea {
+  width: 100%;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  outline: none;
+  color: #1b1b1b;
+  box-sizing: border-box;
+}
+
+/* textarea bigger like design */
+.contact-form-fields textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* little focus glow like modern UI */
+.contact-form-fields input:focus,
+.contact-form-fields textarea:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Button row bottom-right */
+.contact-form-actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+/* Submit button */
+.contact-form-submit {
+  width: 120px;
+  height: 38px;
+  background: #1f1f1f;
+  color: #fff;
+  border: none;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.contact-form-submit:hover {
+  background: #111;
+  transform: translateY(-1px);
+}
+
+/* Moon rocks overlaps bottom */
+.contact-form-moonrocks {
+  width: 100%;
+  display: block;
+  margin-top: -230px;
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-form-row {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .contact-form-left {
+    height: 300px;
+  }
+
+  .contact-form-right {
+    padding: 36px 18px;
+  }
+
+  .contact-form-fields {
+    max-width: 100%;
+  }
+
+  .contact-form-moonrocks {
+    margin-top: -45px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contact-form-moonrocks {
+  width: 100%;
+  display: block;
+  margin-top: -350px;
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+}
+}
