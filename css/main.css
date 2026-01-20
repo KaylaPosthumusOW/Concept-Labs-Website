@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 /* Text Type Variables */
 :root {
+  /* DESKTOP FONT & SIZES */
   --text-title-size: 48px;
   --text-title-weight: 800;
   --text-heading-size: 40px;
@@ -10,7 +11,15 @@
   --text-subtext-size: 24px;
   --text-subtext-weight: 300;
   --text-subtext-bold-weight: 700;
-  --text-body-size: 18px;
+  --text-body-size: 18px;         /* 16px */
+
+  /* MOBILE FONT SIZES (minor third scale) */
+  --mobile-title-size: 33px;  
+  --mobile-heading-size: 28px;   
+  --mobile-subheading-size: 24px;
+  --mobile-subtext-size: 18px;      
+  --mobile-subtext-weight: 500;  
+  --mobile-body-size: 16px;      
 }
 /* main.css: CSS Variables and base layout for Concept Labs */
 
@@ -26,9 +35,13 @@
   --main-font: 'Oxanium', 'Segoe UI', Arial, sans-serif;
   --header-font: 'Oxanium', 'Montserrat', 'Segoe UI', Arial, sans-serif;
 
-  /* line spacing */
+  /* Desktop line spacing */
   --line-spacing-top: 40px;
   --line-spacing-bottom: 75px;
+
+  /* Mobile line spacing */
+  --mobile-line-spacing-top: 24px;
+  --mobile-line-spacing-bottom: 40px;
 }
 
 .container {

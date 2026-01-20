@@ -1,3 +1,11 @@
+/* Drawer-specific full-width chat button */
+#navbarDrawer .chat-btn {
+  width: 100%;
+  display: block;
+  margin-left: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
 /* Responsive: hide links and show burger menu on mobile */
 @media (max-width: 991.98px) {
   .navbar .collapse {
@@ -80,7 +88,7 @@
   gap: 2rem;
 }
 
-.navbar-nav .nav-link {
+.nav-link {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 1rem;
@@ -90,14 +98,14 @@
   padding: 0;
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link:hover {
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
   color: var(--orange) !important;
   background: none;
 }
 
-.navbar-nav .nav-link.active {
+.nav-link.active {
   color: var(--orange) !important;
 }
 
@@ -129,4 +137,10 @@
 
 .navbar-toggler {
   display: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 15px 20px;
+  }
 }

@@ -123,7 +123,7 @@
 @media (max-width: 900px) {
   .footer-container {
     flex-direction: column;
-    padding: 0 12px;
+    padding: 50px 24px;
   }
   .footer-paper {
     position: static;
@@ -143,8 +143,9 @@
     margin-top: -48px;
     font-size: 1.2rem;
   }
-  .footer-bottom {
-    font-size: 0.85rem;
-    margin-top: 32px;
+  .footer-divider {
+    width: 100px;
+    margin-top: var(--mobile-line-spacing-top);
+    margin-bottom: var(--mobile-line-spacing-bottom);
   }
 }
