@@ -1,0 +1,43 @@
+/* Launch Record Section Styles */
+.launch-record-section {
+  background: var(--black);
+  color: #fff;
+  padding: 56px 0 48px 0;
+}
+.launch-record-container {
+  margin: 0 100px;
+}
+.launch-record-title {
+  font-size: var(--text-heading-size, 40px);
+  font-weight: var(--text-heading-weight, 700);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.launch-record-divider {
+  width: 130px;
+  border: 1.5px solid var(--white);
+  margin-top: var(--line-spacing-top);
+  margin-bottom: var(--line-spacing-bottom);
+}
+.launch-record-lead {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
+  color: #fff;
+  margin-bottom: 36px;
+  max-width: 600px;
+}
+.launch-record-brands {
+  color: #fe3434;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 900px) {
+  .launch-record-container {
+    padding: 0 12px;
+  }
+  .launch-record-brands {
+    gap: 16px;
+  }
+}
