@@ -113,6 +113,7 @@
   margin-left: 2.5rem;
   transition: background 0.2s;
   box-shadow: none;
+  text-decoration: none;
 }
 
 .navbar .chat-btn:hover {
