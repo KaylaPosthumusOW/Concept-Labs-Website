@@ -32,9 +32,9 @@
 /* The hanging services tag */
 .services-card-img {
   position: absolute;
-  right: 8%;
+  right: 16%;
   top: -10px;
-  width: 15%;
+  width: 18%;
   transform: rotate(18deg);
   z-index: 4;
   pointer-events: none;
