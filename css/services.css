@@ -1,0 +1,65 @@
+/* Services Section */
+.services-section {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Moon rocks as image, sits at bottom, lower z-index */
+.services-rocks {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Rocket centered-ish but slightly right and lower */
+.services-rocket {
+  position: absolute;
+  left: 52%;
+  bottom: 70px; /* sits on rocks */
+  transform: translateX(-50%);
+  width: 25%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* The hanging services tag */
+.services-card-img {
+  position: absolute;
+  right: 8%;
+  top: -10px;
+  width: 15%;
+  transform: rotate(18deg);
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services-section {
+    min-height: 320px;
+  }
+
+  .services-rocks {
+    height: 55%;
+  }
+
+  .services-rocket {
+    width: 170px;
+    bottom: 50px;
+    left: 50%;
+  }
+
+  .services-card-img {
+    width: 140px;
+    right: 6%;
+    top: 18px;
+    transform: rotate(15deg);
+  }
+}
