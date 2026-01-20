@@ -2,18 +2,17 @@
 .launch-steps-section {
   width: 100%;
   background: #fff;
-  padding: 0 0 48px 0;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
 }
 .launch-steps-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 32px 16px 0 16px;
+  margin: 0;
+  padding: 32px 100px 0 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 .launch-step-foundation {
-  background: #232121;
+  background-color: var(--black) !important;
   color: #fff;
   width: 100%;
   padding: 24px 0 18px 0;
@@ -21,6 +20,8 @@
   position: relative;
   margin-bottom: 24px;
   font-family: 'Oxanium', sans-serif;
+  box-shadow: none;
+  border-radius: 0;
 }
 .launch-step-foundation .launch-step-title {
   font-size: var(--text-subheading-size, 28px);
@@ -28,14 +29,14 @@
   margin-bottom: 6px;
   text-transform: uppercase;
 }
-.launch-step-foundation .launch-step-desc {
-  font-size: var(--text-subtext-size, 24px);
+.launch-step-desc-dark {
+  font-size: var(--text-body-size, 24px);
   font-weight: var(--text-subtext-weight, 300);
+  margin-bottom: 25px;
 }
 .launch-step-foundation .launch-step-index {
   position: absolute;
-  right: 18px;
-  bottom: 10px;
+  right: 20px;
   font-size: 1.1rem;
   font-weight: 700;
   opacity: 0.7;
@@ -49,12 +50,10 @@
   margin-bottom: 32px;
 }
 .launch-step {
-  background: #EF4D25;
+  background: var(--orange);
   color: #fff;
   flex: 1 1 0;
-  min-width: 220px;
-  max-width: 280px;
-  padding: 32px 18px 24px 18px;
+  padding: 20px;
   border-radius: 0;
   position: relative;
   text-align: center;
@@ -62,68 +61,87 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: none;
 }
 .launch-step-title {
   font-size: var(--text-subheading-size, 28px);
   font-weight: var(--text-subheading-weight, 800);
-  margin-bottom: 8px;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 .launch-step-desc {
-  font-size: var(--text-subtext-size, 24px);
+  font-size: var(--text-body-size, 24px);
   font-weight: var(--text-subtext-weight, 300);
-  margin-bottom: 12px;
+  margin-bottom: 70px;
 }
 .launch-step-index {
   position: absolute;
-  right: 18px;
+  right: 25px;
   bottom: 10px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  opacity: 0.7;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Oxanium', sans-serif;
+  color: #fff;
+  line-height: 1;
 }
-.step-fraction {
-  font-size: 0.9em;
-  opacity: 0.7;
+
+.step-top {
+    transform: translateX(-10px) translateY(5px);
+    font-weight: 600;
 }
+.step-bottom {
+    transform: translateX(10px)translateY(-5px);
+    font-weight: 700;
+}
+
+.step-slash {
+    font-weight: 700;
+}
+
 .entity-icon {
-  width: 40px;
-  height: 20px;
-  background: repeating-linear-gradient(90deg, #fff, #fff 4px, transparent 4px, transparent 8px);
+  width: 100px;
+  height: auto;
   margin-bottom: 18px;
   align-self: flex-start;
 }
-.brand-icon {
-  width: 100%;
-  height: 100%;
-  min-height: 40px;
-  min-width: 40px;
-  background: url('../assets/images/grid_block_small.png') center/cover no-repeat;
-  margin-bottom: 18px;
-}
 .presence-icon {
-  width: 40px;
-  height: 20px;
-  background: repeating-linear-gradient(90deg, #fff, #fff 4px, transparent 4px, transparent 8px);
-  border-radius: 8px;
+    width: 60px;
+    height: auto;
+    margin-bottom: 18px;
+    align-self: flex-start;
+}
+.brand-icon-placeholder {
+  display: block;
+  height: 30px;
   margin-bottom: 18px;
-  align-self: flex-end;
-  transform: skewX(-20deg);
+  visibility: hidden;
 }
 .launch-steps-summary {
-  margin-top: 32px;
-  font-size: var(--text-heading-size, 40px);
-  font-weight: var(--text-heading-weight, 700);
+  margin: 20px 240px ;
+  font-size: var(--text-title-size, 40px);
+  font-weight: var(--text-title-weight, 800);
   text-align: center;
   color: #232121;
   font-family: 'Oxanium', sans-serif;
   text-transform: uppercase;
 }
 .launch-steps-summary .orange {
-  color: #EF4D25;
+  color: var(--orange);
   font-weight: var(--text-title-weight, 800);
 }
+.launch-step-brand {
+  background-color: var(--orange);
+  background-image: url('../assets/svgs/grid_background_ovelay.svg');
+  background-size: 270%;
+  background-position: calc(100% + 50px) calc(100% + 50px);
+}
 @media (max-width: 900px) {
+  .launch-steps-container {
+    padding: 32px 16px 0 16px;
+  }
   .launch-steps-row {
     flex-direction: column;
     gap: 18px;
