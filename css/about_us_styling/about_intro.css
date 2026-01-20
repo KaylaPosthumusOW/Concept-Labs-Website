@@ -49,7 +49,7 @@
 .about-intro-text {
   font-size: var(--text-subtext-size, 24px);
   font-weight: var(--text-subtext-weight, 300);
-  color: #232121;
+  color: var(--black);
   max-width: 40%;
   margin-bottom: 0;
 }

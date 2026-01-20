@@ -1,0 +1,144 @@
+/* About Mission Section Styles */
+.about-mission-section {
+  background: var(--white);
+  color: var(--black);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-mission-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0 100px;
+  position: relative;
+  min-height: 115vh;
+}
+
+.about-mission-content {
+  flex: 1 1 600px;
+  z-index: 2;
+  position: relative;
+  padding-top: 24px;
+}
+
+.about-mission-title {
+  font-size: var(--text-subheading-size, 28px);
+  font-weight: var(--text-subheading-weight, 800);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.about-mission-divider {
+  width: 130px;
+  border: 1.5px solid var(--black);
+  margin-top: var(--line-spacing-top);
+  margin-bottom: var(--line-spacing-bottom);
+}
+
+.about-mission-lead {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subheading-weight, 00);
+  margin-bottom: 24px;
+  width: 60%;
+}
+
+.about-mission-text {
+  font-size: var(--text-subtext-size, 24px);
+  font-weight: var(--text-subtext-weight, 300);
+  margin-bottom: 100px;
+  width: 60%;
+}
+
+.about-mission-grid-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 700px;
+  height: 520px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-mission-grid {
+  width: 95%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  z-index: 1;
+  opacity: 0.75;
+}
+
+/* Spaceman Hands Section - sits between mission and footer */
+.spaceman-hands-overlay-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 20;
+}
+.spaceman-hands-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -120px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  z-index: 20;
+}
+@media (max-width: 900px) {
+  .spaceman-hands-overlay {
+    bottom: -20px;
+    width: 100vw;
+  }
+}
+@media (max-width: 1100px) {
+  .about-mission-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 24px;
+    min-height: 320px;
+  }
+  .about-mission-grid-wrapper {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 340px;
+    height: 260px;
+  }
+  .about-mission-content {
+    z-index: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-mission-section {
+    padding: 40px 0 0 0;
+  }
+  .about-mission-title {
+    font-size: 1.3rem;
+  }
+  .about-mission-divider {
+    width: 90px;
+    margin-bottom: 18px;
+  }
+  .about-mission-lead {
+    font-size: 1rem;
+  }
+  .about-mission-content {
+    padding-top: 0;
+  }
+  .about-mission-grid-wrapper {
+    width: 180px;
+    height: 120px;
+    top: 30px;
+  }
+}
