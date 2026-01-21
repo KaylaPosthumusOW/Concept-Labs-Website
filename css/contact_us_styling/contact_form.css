@@ -131,21 +131,32 @@
     flex-direction: column;
     min-height: auto;
   }
-
   .contact-form-left {
-    height: 300px;
+    display: none !important;
   }
-
   .contact-form-right {
     padding: 36px 18px;
   }
-
   .contact-form-fields {
     max-width: 100%;
   }
-
   .contact-form-moonrocks {
-    margin-top: -45px;
+    margin-top: -50px;
+    width: 140%;
+  }
+  .contact-form-title {
+    font-size: var(--mobile-heading-size, 32px);
+  }
+  .contact-form-divider{
+    width: 100px;
+    margin-top: var(--mobile-line-spacing-top);
+    margin-bottom: var(--mobile-line-spacing-bottom);
+  }
+  .contact-form-desc{
+    font-size: var(--mobile-subtext-size, 18px);
+  }
+  .submit {
+    margin-bottom: 30px;
   }
 }
 
