@@ -144,3 +144,12 @@
     padding: 15px 20px;
   }
 }
+
+@media (max-width: 1029px) and (orientation: landscape) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .nav-logo {
+    height: 30px;
+  }
+}

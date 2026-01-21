@@ -66,3 +66,18 @@
     line-height: 45px;
   }
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .btn-orange {
+    width: 250px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+  }
+  .btn-black {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+  }
+}

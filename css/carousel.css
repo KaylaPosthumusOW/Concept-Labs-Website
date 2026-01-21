@@ -23,7 +23,6 @@
   z-index: 2;
   max-width: 540px;
   min-width: 340px;
-  border-radius: 0 24px 24px 0;
 }
 
 .carousel-1 .carousel-top {
@@ -135,7 +134,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1029px) and (orientation: portrait) {
   /* Stack layout */
   .carousel-1 .carousel-content {
     flex-direction: column-reverse;
@@ -185,6 +184,33 @@
     width: 100px;
     margin-top: var(--tablet-line-spacing-top);
     margin-bottom: var(--tablet-line-spacing-bottom);
+  }
+}
+@media (max-width: 1029px) and (orientation: landscape) {
+  .carousel-1 .carousel-divider {
+    width: 130px;
+    border: 1.5px solid var(--black);
+    margin-top: var(--tablet-line-spacing-top);
+    margin-bottom: var(--tablet-line-spacing-bottom);
+  }
+
+  .carousel-1 .carousel-heading {
+    font-size: var(--tablet-heading-size, 40px);
+    font-weight: var(--tablet-heading-weight, 700);
+    color: var(--black);
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  .carousel-1 .carousel-subheading {
+    font-size: var(--tablet-subtext-size, 24px);
+    font-weight: var(--text-subtext-weight, 300);
+    color: #444;
+    margin-bottom: 28px;
+  }
+  .carousel-1 .carousel-right {
+    right: 0;
+    transform: translateY(-30px);
   }
 }
 
@@ -272,6 +298,71 @@
 }
 
 @media (max-width: 768px) {
+
+  /* Make slide 2 stack vertically */
+  .carousel-2 .carousel-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70vh !important;
+    min-height: unset !important;
+    padding: 24px 20px 0 20px;
+  }
+
+  /* Text at the top */
+  .carousel-2-right {
+    order: 1;
+    width: 100%;
+    flex: none;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 3;
+    margin-top: 100px;
+  }
+
+  .carousel-2-heading {
+    font-size: var(--mobile-heading-size, 33px);
+    margin-top: 16px;
+  }
+
+  /* Astronaut section under the text */
+  .carousel-2-left {
+    order: 2;
+    width: 100%;
+    flex: none;
+    height: auto;
+    padding-left: 0;
+    margin-top: auto; /* pushes astronaut section to bottom */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Pattern behind astronaut */
+  .carousel-2-line-pattern {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: unset;
+    opacity: 0.9;
+    z-index: 1;
+  }
+
+  /* Astronaut bigger + aligned left */
+  .carousel-2-astronaut {
+    width: 85%;
+    max-width: 340px;
+    height: auto;
+    left: 0;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+@media (max-width: 1024px) {
 
   /* Make slide 2 stack vertically */
   .carousel-2 .carousel-content {
@@ -553,7 +644,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: portrait) {
   .carousel-1 .carousel-content,
   .carousel-2 .carousel-content,
   .carousel-3 .carousel-content {
@@ -562,5 +653,13 @@
     padding-top: 12px;
     padding-bottom: 12px;
     box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .carousel-1 .carousel-content,
+  .carousel-2 .carousel-content,
+  .carousel-3 .carousel-content {
+    height: 90vh;
   }
 }

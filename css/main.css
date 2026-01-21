@@ -19,15 +19,11 @@ html, body {
   /* TABLET FONT SIZES (minor third scale) */
   --tablet-title-size: 36px;
   --tablet-title-weight: 800;
-
   --tablet-heading-size: 32px;
   --tablet-heading-weight: 700;
-
   --tablet-subheading-size: 26px;
-
   --tablet-subtext-size: 20px;
   --tablet-subtext-weight: 500;
-
   --tablet-body-size: 18px;
 
   /* MOBILE FONT SIZES (minor third scale) */
