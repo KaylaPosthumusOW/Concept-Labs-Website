@@ -18,7 +18,8 @@ html, body {
 
   /* MOBILE FONT SIZES (minor third scale) */
   --mobile-title-size: 33px;  
-  --mobile-heading-size: 28px;   
+  --mobile-heading-size: 28px; 
+  --mobile-heading-weight: 700;  
   --mobile-subheading-size: 24px;
   --mobile-subtext-size: 18px;      
   --mobile-subtext-weight: 500;  

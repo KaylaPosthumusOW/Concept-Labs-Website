@@ -76,15 +76,62 @@
   margin: 0;
 }
 
-/* ✅ Tablet */
-@media (max-width: 991.98px) {
+/* ✅ RESPONSIVE FIX: Why Choose Section */
+@media (max-width: 768px) {
   .why-choose-section {
-    padding: 0 32px;
-    margin-top: 0;
+    padding: 0 16px;
+    margin-top: 30px;
+  }
+
+  /* Keep image centered in the background */
+  .why-choose-bg {
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.2;
   }
 
   .why-choose-content {
-    padding: 48px 0 40px 0;
+    padding: 32px 16px;
+  }
+
+  .why-choose-title {
+    font-size: var(--mobile-heading-size, 28px);
+    font-weight: var(--mobile-heading-weight, 800);
+  }
+
+  .why-choose-divider {
+    width: 100px;
+    margin-top: var(--mobile-line-spacing-top);
+    margin-bottom: var(--mobile-line-spacing-bottom);
+  }
+
+  .why-choose-lead {
+    font-size: var(--mobile-subtext-size, 19px);
+    max-width: 100%;
+  }
+
+  .why-choose-cards {
+    gap: 16px !important;
+  }
+
+  .why-choose-card {
+    padding: 18px 16px;
+  }
+
+  .why-choose-card h3 {
+    font-size: 16px;
+  }
+
+  .why-choose-card p {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+}
+
+/* ✅ TABLET: 2 cards per row */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .why-choose-section {
+    padding: 0 40px;
   }
 
   .why-choose-title {
@@ -93,60 +140,6 @@
 
   .why-choose-lead {
     font-size: 18px;
-    max-width: 100%;
-  }
-
-  .why-choose-card p {
-    font-size: 16px;
-  }
-}
-
-/* ✅ Mobile */
-@media (max-width: 575.98px) {
-  .why-choose-section {
-    padding: 0 18px;
-  }
-
-  .why-choose-title {
-    font-size: 28px;
-    line-height: 1.1;
-  }
-
-  .why-choose-divider {
-    width: 90px;
-  }
-
-  .why-choose-lead {
-    font-size: 16px;
-    line-height: 1.45;
-  }
-
-  .why-choose-card {
-    padding: 18px 16px;
-    border-radius: 10px;
-  }
-
-  .why-choose-card h3 {
-    font-size: 18px;
-  }
-
-  .why-choose-card p {
-    font-size: 15px;
-    line-height: 1.45;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .why-choose-bg {
-    background-position: right center;
-    opacity: 0.35; /* optional: softer on smaller screens */
-  }
-}
-
-@media (max-width: 575.98px) {
-  .why-choose-bg {
-    background-position: center top;
-    opacity: 0.25;
   }
 }
 
