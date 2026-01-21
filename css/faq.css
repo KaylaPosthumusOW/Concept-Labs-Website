@@ -129,18 +129,18 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .faq-accordions {
-    width: 100%;
-    max-width: 100vw;
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 50px 24px 0 24px;
+  }
+  .faq-title {
+    font-size: var(--mobile-heading-size, 28px);
+    font-weight: var(--mobile-heading-weight, 700);
+  }
+ .faq-divider {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: var(--mobile-line-spacing-bottom);
   }
 
-  .faq-question {
-    padding: 18px 18px;
-    font-size: 1rem;
-  }
-
-  .faq-panel-inner {
-    padding: 16px 18px 18px 18px;
-  }
 }
