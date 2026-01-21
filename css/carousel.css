@@ -207,6 +207,8 @@
 .carousel-2-heading .orange {
   color: #EF4D25;
 }
+
+
 /* Overlay and right-aligned text for carousel-1 */
 .carousel-1 .carousel-content {
   position: relative;
@@ -215,6 +217,72 @@
   height: 95vh;
   min-height: 95vh;
 }
+
+@media (max-width: 768px) {
+
+  /* Make slide 2 stack vertically */
+  .carousel-2 .carousel-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70vh !important;
+    min-height: unset !important;
+    padding: 24px 20px 0 20px;
+  }
+
+  /* Text at the top */
+  .carousel-2-right {
+    order: 1;
+    width: 100%;
+    flex: none;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 3;
+    margin-top: 100px;
+  }
+
+  .carousel-2-heading {
+    font-size: var(--mobile-heading-size, 33px);
+    margin-top: 16px;
+  }
+
+  /* Astronaut section under the text */
+  .carousel-2-left {
+    order: 2;
+    width: 100%;
+    flex: none;
+    height: auto;
+    padding-left: 0;
+    margin-top: auto; /* pushes astronaut section to bottom */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Pattern behind astronaut */
+  .carousel-2-line-pattern {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: unset;
+    opacity: 0.9;
+    z-index: 1;
+  }
+
+  /* Astronaut bigger + aligned left */
+  .carousel-2-astronaut {
+    width: 85%;
+    max-width: 340px;
+    height: auto;
+    left: 0;
+    z-index: 2;
+    position: relative;
+  }
+}
+
 
 /* Carousel Slide 3 Styling */
 .carousel-3-bg-full {
