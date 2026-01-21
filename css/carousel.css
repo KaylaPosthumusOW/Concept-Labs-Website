@@ -397,6 +397,100 @@
 }
 
 @media (max-width: 768px) {
+
+  /* Stack vertically */
+  .carousel-3 .carousel-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    height: 70vh !important;
+    min-height: unset !important;
+
+    padding: 16px 20px 20px 20px;
+    box-sizing: border-box;
+  }
+
+  /* IMAGE BLOCK FIRST */
+  .carousel-3-right {
+    order: 1;
+    width: 100%;
+    flex: none;
+    height: 45vh;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    transform: none; /* remove desktop translate */
+    margin-bottom: 12px;
+  }
+
+  /* Grid behind astronaut */
+  .carousel-3-bg-full {
+    position: absolute;
+    left: 120px;
+    top: auto;
+
+    width: 65%;
+    max-width: 380px;
+    height: auto;
+
+    z-index: 1;
+    opacity: 0.85;
+  }
+
+  /* Astronaut in front */
+  .carousel-3-astronaut {
+    position: relative;
+    left: 100px;
+    top: auto;
+    width: 72%;
+    max-width: 320px;
+    height: auto;
+    z-index: 2;
+  }
+
+  /* TEXT UNDER IMAGE */
+  .carousel-3-left {
+    order: 2;
+    width: 100%;
+    flex: none;
+    height: auto;
+
+    padding-left: 0;
+    padding-top: 0;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  /* remove big desktop translate */
+  .carousel-3-info {
+    transform: none;
+  }
+
+  .carousel-3-circle-icon {
+    width: 40px;
+    margin-bottom: 10px;
+    transform: none;
+  }
+
+  .carousel-3-heading {
+    font-size: var(--mobile-heading-size, 33px);
+    font-weight: var(--text-heading-weight);
+  }
+
+  /* Tape usually breaks mobile layouts */
+  .carousel-3-tape {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
   .carousel-1 .carousel-content,
   .carousel-2 .carousel-content,
   .carousel-3 .carousel-content {
