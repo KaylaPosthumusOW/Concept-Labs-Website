@@ -16,6 +16,20 @@ html, body {
   --text-subtext-bold-weight: 700;
   --text-body-size: 18px;         /* 16px */
 
+  /* TABLET FONT SIZES (minor third scale) */
+  --tablet-title-size: 36px;
+  --tablet-title-weight: 800;
+
+  --tablet-heading-size: 32px;
+  --tablet-heading-weight: 700;
+
+  --tablet-subheading-size: 26px;
+
+  --tablet-subtext-size: 20px;
+  --tablet-subtext-weight: 500;
+
+  --tablet-body-size: 18px;
+
   /* MOBILE FONT SIZES (minor third scale) */
   --mobile-title-size: 33px; 
   --mobile-title-weight: 800; 
@@ -43,6 +57,10 @@ html, body {
   /* Desktop line spacing */
   --line-spacing-top: 40px;
   --line-spacing-bottom: 75px;
+
+   /* Tablet line spacing */
+  --tablet-line-spacing-top: 30px;
+  --tablet-line-spacing-bottom: 60px;
 
   /* Mobile line spacing */
   --mobile-line-spacing-top: 24px;

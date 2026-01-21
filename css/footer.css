@@ -166,3 +166,10 @@
     margin-bottom: var(--mobile-line-spacing-bottom);
   }
 }
+
+
+@media (max-width: 1280px) {
+  .footer-paper-img {
+    transform: translateY(250px) translateX(120px);
+  }
+}

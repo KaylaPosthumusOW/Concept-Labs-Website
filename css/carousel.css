@@ -12,7 +12,7 @@
 .carousel-1 .carousel-right {
   flex: 1 1 50%;
   position: absolute;
-  right: 200px;
+  right: 100px;
   top: 0;
   bottom: 0;
   display: flex;
@@ -132,6 +132,59 @@
     width: 100px;
     margin-top: var(--mobile-line-spacing-top);
     margin-bottom: var(--mobile-line-spacing-bottom);
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Stack layout */
+  .carousel-1 .carousel-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    position: relative;
+  }
+  /* Text section becomes normal flow */
+  .carousel-1 .carousel-right {
+    position: relative;
+    right: auto;
+    top: auto;
+    bottom: auto;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+
+    padding: 24px 50px;
+    border-radius: 0;
+  }
+  /* Image section goes to bottom */
+  .carousel-1 .carousel-left {
+    width: 100%;
+    flex: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 10px 0;
+  }
+  .carousel-1 .carousel-astronaut {
+    width: 120%;
+    max-width: 1000px;
+    min-width: 220px;
+    height: auto;
+    margin-left: 0;
+    display: block;
+    object-fit: cover;
+  }
+  /* Optional: smaller text for mobile */
+  .carousel-1 .carousel-heading {
+    font-size: var(--tablet-title-size, 33px);
+    line-height: 1.1;
+  }
+  .carousel-1 .carousel-subheading {
+    font-size: var(--tablet-subtext-size);
+  }
+  .carousel-1 .carousel-divider {
+    width: 100px;
+    margin-top: var(--tablet-line-spacing-top);
+    margin-bottom: var(--tablet-line-spacing-bottom);
   }
 }
 
@@ -488,13 +541,23 @@
   }
 }
 
-
-
 @media (max-width: 768px) {
   .carousel-1 .carousel-content,
   .carousel-2 .carousel-content,
   .carousel-3 .carousel-content {
     height: 78vh !important;
+    min-height: 320px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel-1 .carousel-content,
+  .carousel-2 .carousel-content,
+  .carousel-3 .carousel-content {
+    height: 80vh !important;
     min-height: 320px;
     padding-top: 12px;
     padding-bottom: 12px;

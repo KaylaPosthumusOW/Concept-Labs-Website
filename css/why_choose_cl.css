@@ -136,10 +136,21 @@
 
   .why-choose-title {
     font-size: 36px;
+    width: 60%;
   }
 
   .why-choose-lead {
     font-size: 18px;
+    width: 60% !important;
   }
+  .why-choose-bg {
+        background-position: calc(100% + 400px) top !important;
+    }
+}
+
+@media  (max-width: 1280px) {
+    .why-choose-bg {
+        background-position: calc(100% + 200px) top;
+    }
 }
 
