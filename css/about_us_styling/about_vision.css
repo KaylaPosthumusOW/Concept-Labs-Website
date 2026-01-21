@@ -124,6 +124,7 @@
   }
   .about-vision-title {
     font-size: var(--mobile-heading-size, 28px);
+    font-weight: var(--mobile-heading-weight, 700);
   }
   .about-vision-divider {
     width: 100px;
