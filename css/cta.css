@@ -141,6 +141,25 @@
   .cta-content {
     margin-left: 0;
   }
+  .cta-container {
+    margin: 0 auto;
+    padding: 60px 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .cta-title {
+    font-size: var(--mobile-heading-size, 28px);
+  }
+  .cta-lead {
+    font-size: var(--mobile-subtext-size, 18px);
+    max-width: 100%;
+  }
+  .cta-divider {
+    width: 100px;
+    margin-top: var(--mobile-line-spacing-top);
+    margin-bottom: var(--mobile-line-spacing-bottom);
+  }
 }
 @media (min-width: 1920px) {
   .cta-astronaut {
