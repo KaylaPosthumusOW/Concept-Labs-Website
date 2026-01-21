@@ -1,3 +1,7 @@
+.about-sections-wrapper {
+  padding-top: 80px;
+}
+
 /* Overlay astronaut across both sections */
 .about-overlay-astronaut {
   position: absolute;

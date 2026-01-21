@@ -1,3 +1,7 @@
+.carousel {
+  padding-top: 80px;
+}
+
 /* Carousel 1 Styling */
 .carousel-1 .carousel-left {
   flex: 1 1 60%;
@@ -134,7 +138,7 @@
   }
 }
 
-@media (max-width: 1029px) and (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
   /* Stack layout */
   .carousel-1 .carousel-content {
     flex-direction: column-reverse;
@@ -186,7 +190,7 @@
     margin-bottom: var(--tablet-line-spacing-bottom);
   }
 }
-@media (max-width: 1029px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
   .carousel-1 .carousel-divider {
     width: 130px;
     border: 1.5px solid var(--black);
@@ -362,7 +366,7 @@
   }
 }
 
-@media (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 
   /* Make slide 2 stack vertically */
   .carousel-2 .carousel-content {
@@ -428,7 +432,7 @@
   }
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
   .carousel-2-heading {
     font-size: var(--tablet-heading-size, 40px);
     font-weight: var(--tablet-heading-weight, 700);
@@ -647,7 +651,7 @@
   }
 }
 
-@media (max-width: 1024px) and (orientation: portrait)  {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait)  {
 
   /* Stack vertically */
   .carousel-3 .carousel-content {
@@ -737,7 +741,7 @@
   }
 }
 
-@media (max-width: 1024px) and (orientation: landscape)  {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape)  {
 
   .carousel-3-heading {
     font-size: var(--tablet-heading-size, 40px);
@@ -761,8 +765,6 @@
   }
 }
 
-
-
 @media (max-width: 768px) {
   .carousel-1 .carousel-content,
   .carousel-2 .carousel-content,
@@ -775,7 +777,7 @@
   }
 }
 
-@media (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
   .carousel-1 .carousel-content,
   .carousel-2 .carousel-content,
   .carousel-3 .carousel-content {
@@ -787,7 +789,7 @@
   }
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
   .carousel-1 .carousel-content,
   .carousel-2 .carousel-content,
   .carousel-3 .carousel-content {

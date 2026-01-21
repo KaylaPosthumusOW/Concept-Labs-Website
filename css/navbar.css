@@ -6,29 +6,6 @@
   box-sizing: border-box;
   text-align: center;
 }
-/* Responsive: hide links and show burger menu on mobile */
-@media (max-width: 991.98px) {
-  .navbar .collapse {
-    display: none !important;
-  }
-  .navbar-toggler {
-    display: block !important;
-    z-index: 1060;
-    border: none;
-    color: var(--black);
-  }
-  .navbar .drawer-backdrop {
-    display: block;
-  }
-  .navbar-nav {
-    display: none !important;
-    gap: 1.2rem;
-  }
-  .navbar .chat-btn {
-    margin-left: 1.2rem;
-    padding: 0.7rem 1.5rem;
-  }
-}
 
 #navbarDrawer {
   position: fixed;
@@ -73,11 +50,16 @@
 
 /* navbar.css: Custom styles for Concept Labs navbar to match design */
 .navbar {
+  position: fixed;
+  width: 100%;
   padding: 20px 100px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   z-index: 1030;
+  background: #fff;
 }
 
+/* Add this to your main CSS or body style to prevent content from being hidden under the navbar: */
+/* body { padding-top: 80px; }  Adjust 80px to match navbar height */
 .nav-logo {
   height: 40px;
   width: auto;
@@ -137,6 +119,30 @@
 
 .navbar-toggler {
   display: none;
+}
+
+/* Responsive: hide links and show burger menu on mobile */
+@media (max-width: 991.98px) {
+  .navbar .collapse {
+    display: none !important;
+  }
+  .navbar-toggler {
+    display: block !important;
+    z-index: 1060;
+    border: none;
+    color: var(--black);
+  }
+  .navbar .drawer-backdrop {
+    display: block;
+  }
+  .navbar-nav {
+    display: none !important;
+    gap: 1.2rem;
+  }
+  .navbar .chat-btn {
+    margin-left: 1.2rem;
+    padding: 0.7rem 1.5rem;
+  }
 }
 
 @media (max-width: 991.98px) {
