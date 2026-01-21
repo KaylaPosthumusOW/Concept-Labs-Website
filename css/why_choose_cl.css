@@ -19,7 +19,7 @@
 .why-choose-content {
   position: relative;
   z-index: 2;
-  padding: 56px 32px 48px 32px;
+  padding: 56px 0 48px 0;
 }
 .why-choose-title {
   font-family: 'Oxanium', sans-serif;
@@ -128,32 +128,6 @@
   }
 }
 
-/* ✅ TABLET: 2 cards per row */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .why-choose-section {
-    padding: 0 40px;
-  }
-
-  .why-choose-title {
-    font-size: 36px;
-    width: 60%;
-  }
-
-  .why-choose-lead {
-    font-size: 18px;
-    width: 60% !important;
-  }
-  .why-choose-bg {
-        background-position: calc(100% + 400px) top !important;
-    }
-}
-
-@media  (min-width: 769px) and (max-width: 1280px) {
-    .why-choose-bg {
-        background-position: calc(100% + 200px) top;
-    }
-}
-
 /* Tablet Portrait: 1024px max, portrait */
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
   .why-choose-section {
@@ -175,22 +149,41 @@
 }
 
 /* Tablet Landscape: 1024px max, landscape */
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
   .why-choose-section {
     padding: 0 32px;
   }
   .why-choose-title {
     font-size: var(--tablet-heading-size, 33px);
     font-weight: var(--tablet-heading-weight, 800);
+    width: 50%;
   }
   .why-choose-lead {
     font-size: var(--tablet-subtext-size, 19px);
-    max-width: 100%;
+    max-width: 40%;
   }
   .why-choose-divider {
     width: 100px;
     margin-top: var(--tablet-line-spacing-top);
     margin-bottom: var(--tablet-line-spacing-bottom);
   }
+
+  .why-choose-bg {
+        background-position: calc(100% + 400px) top !important;
+    }
+    .why-choose-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .why-choose-card {
+      flex: 1 1 calc(33.333% - 16px);
+      max-width: calc(33.333% - 16px);
+      box-sizing: border-box;
+    }
+    .why-choose-card:nth-child(n+4) {
+      flex: 1 1 calc(50% - 12px);
+      max-width: calc(50% - 12px);
+    }
 }
 
