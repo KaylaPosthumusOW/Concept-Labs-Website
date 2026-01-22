@@ -134,6 +134,21 @@
 .cta-btn:hover {
   background: #d13e1c;
 }
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .cta-astronaut {
+    transform: translateX(-120px) translateY(20px);
+    width: 50%;
+  }
+  .cta-content {
+    margin-left: 380px;
+    flex: 1 1 0;
+    align-self: flex-start;
+  }
+  
+}
+
+
 @media (max-width: 900px) {
   .cta-astronaut, .services-astronaut {
     display: none;

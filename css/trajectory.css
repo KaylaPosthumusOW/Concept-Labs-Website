@@ -91,6 +91,59 @@
   max-width: 540px;
 }
 
+@media (min-width: 901px) and (max-width: 1024px) {
+  .trajectory-content {
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 50px 32px;
+  }
+  .trajectory-img {
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    position: absolute;
+    transform: translateY(600px);
+  }
+  .trajectory-launch {
+    padding: 50px 32px;
+  }
+  .trajectory-title {
+    font-size: var(--tablet-heading-size, 33px);
+    font-weight: var(--tablet-heading-weight, 700);
+    text-transform: uppercase;
+  }
+  .trajectory-lead {
+    font-size: var(--tablet-subtext-size, 24px);
+  }
+  .trajectory-divider {
+    width: 100px;
+    margin-top: var(--tablet-line-spacing-top);
+    margin-bottom: var(--tablet-line-spacing-bottom);
+  }
+  .trajectory-launch-title {
+    font-size: var(--tablet-heading-size, 33px);
+    font-weight: var(--tablet-heading-weight, 700);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    width: 40%;
+  }
+  .trajectory-launch-lead {
+    font-size: var(--tablet-subtext-size, 24px);
+  }
+  .trajectory-divider {
+    width: 100px;
+    margin-top: var(--tablet-line-spacing-top);
+    margin-bottom: var(--tablet-line-spacing-bottom);
+  }
+  
+}
+
 @media (max-width: 900px) {
 
   .trajectory-content {

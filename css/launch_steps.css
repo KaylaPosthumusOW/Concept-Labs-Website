@@ -231,6 +231,9 @@
   .launch-steps-summary {
     padding: 50px 100px;
   }
+  .launch-steps-container {
+    padding: 32px 32px 0 32px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1280px) {

@@ -40,6 +40,43 @@
   pointer-events: none;
 }
 
+@media (min-width: 901px) and (max-width: 1024px) and (orientation: portrait) {
+    .services-card-img {
+        width: 20%;
+        right: 14%;
+        top: -10px;
+        transform: rotate(18deg);
+    }
+    .services-section {
+        min-height: 80vh;
+    }
+    
+  .services-rocket {
+    width: 60%;
+    bottom: 50px;
+    left: 50%;
+  }
+  .services-rocks {
+    height: auto;
+    width: 220%;
+  }
+  .services-card-img {
+    width: 30%;
+    right: 6%;
+
+    transform: rotate(15deg);
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) and (orientation: landscape) {
+   
+  .services-rocket {
+    width: 30%;
+    bottom: 50px;
+    left: 50%;
+  }
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .services-section {
