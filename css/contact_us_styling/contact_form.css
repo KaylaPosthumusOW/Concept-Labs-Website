@@ -184,3 +184,20 @@
     pointer-events: none;
   }
 }
+@media (max-width: 1100px) {
+  .contact-form-title {
+    font-size: var(--tablet-heading-size, 32px);
+    font-weight: var(--tablet-heading-weight, 700);
+  }
+
+  .contact-form-divider {
+    width: 100px;
+    margin-top: var(--tablet-line-spacing-top);
+    margin-bottom: var(--tablet-line-spacing-bottom);
+  }
+  .contact-form-desc {
+    font-size: var(--tablet-subtext-size, 19px);
+    font-weight: var(--tablet-body-weight, 300);
+    margin-bottom: 18px;
+  }
+}
