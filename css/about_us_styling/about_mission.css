@@ -169,7 +169,6 @@
   .about-mission-text {
     font-size: var(--mobile-subtext-size, 19px);
     width: 100%;
-    padding-bottom: 50px;
   }
   .about-mission-content {
     padding-top: 0;
