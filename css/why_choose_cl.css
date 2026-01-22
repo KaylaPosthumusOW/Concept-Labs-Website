@@ -23,7 +23,7 @@
 }
 .why-choose-title {
   font-family: 'Oxanium', sans-serif;
-  font-size: var(--text-subheading-size, 48px);
+  font-size: var(--text-heading-size, 48px);
   font-weight: var(--text-title-weight, 800);
   letter-spacing: 0.5px;
   margin-bottom: 8px;
