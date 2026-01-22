@@ -110,6 +110,7 @@
     padding: 0 24px;
     min-height: 320px;
     overflow: hidden;
+    margin-bottom: 100px;
   }
   .about-mission-grid-wrapper {
     position: absolute;
@@ -120,6 +121,31 @@
   }
   .about-mission-content {
     z-index: 2;
+  }
+  .about-mission-title {
+    font-size: var(--tablet-heading-size, 32px);
+    font-weight: var(--tablet-heading-weight, 700);
+  }
+  .about-mission-divider {
+    width: 100px;
+    margin-top: var(--tablet-line-spacing-top);
+    margin-bottom: var(--tablet-line-spacing-bottom);
+  }
+  .about-mission-lead {
+    font-size: var(--tablet-subtext-size, 19px);
+    width: 60%;
+    margin-bottom: 18px;
+  }
+  .about-mission-text {
+    font-size: var(--tablet-subtext-size, 19px);
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  .about-mission-grid-wrapper {
+    width: 50%;
+    height: auto;
+    transform: translateY(-80px) translateX(40px);
+    opacity: 0.5;
   }
 }
 
