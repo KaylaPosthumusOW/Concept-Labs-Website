@@ -132,6 +132,15 @@
     .faq-section {
     padding: 50px 32px 0 32px;
     }
+    .faq-title {
+    font-size: var(--tablet-heading-size, 33px);
+    font-weight: var(--tablet-heading-weight, 700);
+    }
+    .faq-divider  {
+    width: 100px;
+    margin-top: var(--tablet-line-spacing-top);
+    margin-bottom: var(--tablet-line-spacing-bottom);
+    }
 }
 
 /* Responsive */
